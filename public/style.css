@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+/* bc === brand color */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app-container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.button {
+  width: 6rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+}
+
+header {
+  padding-top: 0.8rem;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25rem 0 25rem;
+}
+
+header nav .header-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav .header-btn-container .join-btn {
+  background-color: transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #818181;
+  cursor: pointer;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+header nav .header-btn-container .join-btn:hover {
+  background-color: #e3e6e9;
+  color: black;
+}
+
+header nav .header-btn-container .sign-in-btn {
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #0077b5;
+  color: #0077b5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+header nav .header-btn-container .sign-in-btn:hover {
+  background-color: #e6f2ff;
+  border: 2px solid #0077b5;
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+/* bc === brand color */
+$bc-blue: #0077b5;
+$bc-light-blue: #00a0dc;
+$bc-grey: #e3e6e9;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.app-container {
+    height: fit-content;
+}
+
+.button {
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
+
+header {
+    padding-top: 0.8rem;
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 25rem 0 25rem;
+    
+        .header-btn-container {
+            display: flex;
+            gap: 1rem;
+
+            .join-btn {
+                background-color: transparent;
+                border-radius: 5px;
+                font-weight: 600;
+                color: #818181;
+                cursor: pointer;
+                transition: background-color .3s ease;
+
+                &:hover {
+                    background-color:$bc-grey;
+                    color: black;
+                }
+            }
+
+            .sign-in-btn {
+                background-color: transparent;
+                border-radius: 50px;
+                border: 1px solid $bc-blue;
+                color: $bc-blue;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #e6f2ff;
+                    border: 2px solid $bc-blue;
+                }
+            }
+        }
+    }  
+}
+
