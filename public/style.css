@@ -1,26 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 /* bc === brand color */
-* {
+.main-content-container .content-2-container .buttons-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content-container .content-1-container, .main-content-container .content-1-container .content-1-main > form .hr-div, .main-content-container .content-2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html, body {
+a {
+  text-decoration: none;
+  color: #00a0dc;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html {
   width: 100%;
   height: 100%;
 }
 
-#root {
+body {
   width: 100%;
   height: 100%;
-}
-
-.app-container {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .button {
@@ -46,7 +72,7 @@ header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 25rem 0 25rem;
+  padding: 0 25rem 0 24rem;
 }
 
 header nav .header-btn-container {
@@ -83,4 +109,151 @@ header nav .header-btn-container .sign-in-btn {
 header nav .header-btn-container .sign-in-btn:hover {
   background-color: #e6f2ff;
   border: 2px solid #0077b5;
+}
+
+/*--------MAIN CONTENT STYLES--------*/
+.main-content-container .content-1-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 14rem 0 24rem;
+}
+
+.main-content-container .content-1-container .content-1-main {
+  width: 50%;
+}
+
+.main-content-container .content-1-container .content-1-main > h1 {
+  font-size: 3.6rem;
+  line-height: 4rem;
+  font-weight: 300;
+  color: #a13333;
+}
+
+.main-content-container .content-1-container .content-1-main > form {
+  width: 25rem;
+  padding-right: 2rem;
+}
+
+.main-content-container .content-1-container .content-1-main > form > input {
+  width: 100%;
+  height: 1.8rem;
+  padding: .5rem;
+}
+
+.main-content-container .content-1-container .content-1-main > form > input:nth-child(1) {
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+  padding: .5rem;
+}
+
+.main-content-container .content-1-container .content-1-main > form > p {
+  margin: 1rem 0 0 0;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.main-content-container .content-1-container .content-1-main > form .agree-btn {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 8rem;
+  margin-bottom: 1.5rem;
+  background-color: #0077b5;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.main-content-container .content-1-container .content-1-main > form .agree-btn:hover {
+  background-color: #00517c;
+}
+
+.main-content-container .content-1-container .content-1-main > form .hr-div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+.main-content-container .content-1-container .content-1-main > form .hr-div hr {
+  width: 250px;
+  height: 0px;
+}
+
+.main-content-container .content-1-container .content-1-main > form .already-btn {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 8rem;
+  margin-top: 1.5rem;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #0077b5;
+  color: black;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.main-content-container .content-1-container .content-1-main > form .already-btn:hover {
+  background-color: #e6f2ff;
+  border: 2px solid #0077b5;
+  text-decoration: underline;
+}
+
+.main-content-container .content-1-container .content-1-main > form .already-btn > a {
+  font-size: 1.3rem;
+}
+
+.main-content-container .content-2-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 14rem 5rem 14rem;
+  background-color: #ececec;
+}
+
+.main-content-container .content-2-container > p {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: auto;
+}
+
+.main-content-container .content-2-container .buttons-div > p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 1.5rem 0.5rem;
+  font-size: 1.2rem;
+}
+
+.main-content-container .content-2-container .buttons-div .ul-1 {
+  width: 40rem;
+}
+
+.main-content-container .content-2-container .buttons-div .ul-1 .li-set-1 {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 3.5rem;
+  border-radius: 8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  list-style: none;
+  background-color: #c9c9c9;
+  padding: 1rem;
+  text-align: center;
+  margin: 0.5rem;
+  font-weight: 500;
+}
+
+.main-content-container .content-2-container .buttons-div .ul-1 .li-set-1:hover {
+  text-decoration: underline;
+  background-color: #b3b3b3;
 }
