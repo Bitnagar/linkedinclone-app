@@ -3,6 +3,29 @@ import ManSitting from "../assets/man-sitting.svg";
 import Li from "./Li"
 
 export default function MainContent() {
+
+    const [showMore, setShowMore] = React.useState(false);
+    const [n, setN] = React.useState(8);
+    
+    function changeShowMore() {
+        setShowMore(prevState => !prevState);
+    }
+    
+    function changeN() {
+        setN(prevState => {
+            if(prevState === 8) {
+                return prevState + 6;
+            } else {
+                return prevState - 6;
+            }
+        });
+    }
+    
+    function changeShowMoreAndN() {
+        changeN();
+        changeShowMore();
+    }
+
     return (
         <div className="main-content-container">
             <div className="content-1-container">
@@ -11,16 +34,18 @@ export default function MainContent() {
                     <form>
                         <input
                             placeholder="Email or phone"
-                            name="email"
                             type="email"
                             id="email"
+                            className="email"
+                            autoComplete="email"
                         />
                         <br></br>
                         <input
                             placeholder="Password (6+ characters)"
-                            name="password"
                             type="password"
                             id="password"
+                            className="password"
+                            autoComplete="current-password"
                         />
                         <p>By clicking Agree & join, you agree to the LinkedIn <a href="$">User Agreement</a>, <a href="$">Privacy Policy</a>, and <a href="$">Cookie Policy</a>
                         </p>
@@ -41,7 +66,11 @@ export default function MainContent() {
                 <div className="buttons-div">
                     <p>CONTENT TOPICS</p>
                     <ul className="ul-1">
-                        <Li />
+                        <Li n={n} /> <br></br>
+                    <p
+                        className="li-set-1"
+                        onClick={changeShowMoreAndN}
+                    >{showMore ? "Show less" : "Show more"}</p>
                     </ul>
                 </div>
             </div>

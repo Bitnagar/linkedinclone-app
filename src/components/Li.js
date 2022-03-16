@@ -1,21 +1,12 @@
 import React from "react";
 import Data from "../data"
 
-export default function li() {
+export default function li(props) {
 
-    // const style = {
-    //     width: 'fit-content',
-    //     padding: '1rem',
-    //     height: '3.5rem',
-    //     textAlign: 'center',
-    //     borderRadius: '8rem',
-    //     backgroundColor: '$bc-blue',
-    //     fontSize: '1.2rem',
-    //     cursor: 'pointer'
-    // }
-
-    const li = Data.data.buttonData.map(item => {
-        return <li className="li-set-1">{item.innerText}</li>
+    const li = Data.data.buttonData.map((item, key) => {
+        while(key < props.n) {
+            return <li className="li-set-1" key={key}>{item.innerText}</li>
+        }
     })
 
     return (

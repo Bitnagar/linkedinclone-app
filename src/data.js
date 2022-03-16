@@ -25,6 +25,24 @@ export default {
             },
             {
                 "innerText": "Business and Management",
+            },
+            {
+                "innerText": "lifestyle and Leisure",
+            },
+            {
+                "innerText": "Society and Culture",
+            },
+            {
+                "innerText": "Arts and Entertainment",
+            },
+            {
+                "innerText": "Education and Learning",
+            },
+            {
+                "innerText": "Sports and Fitness",
+            },
+            {
+                "innerText": "Career and Employement",
             }
         ]
     }
