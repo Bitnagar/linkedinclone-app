@@ -96,14 +96,14 @@ export default function MainContent() {
                     <p
                         className="li-set-1"
                         onClick={changeShowMoreAndN}
-                    >{showMore ? "Show less" : "Show more"}</p>
+                    >{showMore ? "Show less" : "Show more"} {showMore ? <>&uarr;</> : <>&darr;</>} </p>
                     </ul>
                 </div>
             </div>
 
 
             {/* for 2nd buttons list */}
-            <div className="content-2-container">
+            <div className="content-2-container transparent">
                 <p>Find the right job or <br></br> internship for you</p>
                 <div className="buttons-div">
                     <p>SUGGESTED SEARCHES</p>
@@ -112,7 +112,9 @@ export default function MainContent() {
                     <p
                         className="li-set-1"
                         onClick={changeShowMore2AndN2}
-                    >{showMore2 ? "Show less" : "Show more"}</p>
+                    >{showMore2 ? "Show less" : "Show more"}
+                     {showMore2 ? <> &uarr;</> : <> &darr;</>}
+                    </p>
                     </ul>
                 </div>
             </div>

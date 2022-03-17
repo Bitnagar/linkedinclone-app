@@ -216,8 +216,12 @@ header nav .header-btn-container .sign-in-btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5rem 14rem 5rem 14rem;
+  padding: 5rem 14rem 5rem 24rem;
   background-color: #ececec;
+}
+
+.main-content-container .content-2-container.transparent {
+  background-color: transparent;
 }
 
 .main-content-container .content-2-container > p {
@@ -227,12 +231,16 @@ header nav .header-btn-container .sign-in-btn:hover {
       align-self: flex-start;
 }
 
+.main-content-container .content-2-container .buttons-div {
+  margin-right: 12rem;
+}
+
 .main-content-container .content-2-container .buttons-div > p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 0 1.5rem 0.5rem;
-  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0.5rem;
+  font-size: 1rem;
 }
 
 .main-content-container .content-2-container .buttons-div .ul-1 {
@@ -249,11 +257,13 @@ header nav .header-btn-container .sign-in-btn:hover {
   font-size: 1.2rem;
   cursor: pointer;
   list-style: none;
-  background-color: #c9c9c9;
+  background-color: #dbdbdb;
   padding: 1rem;
   text-align: center;
   margin: 0.5rem;
   font-weight: 500;
+  -webkit-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
 }
 
 .main-content-container .content-2-container .buttons-div .ul-1 .li-set-1:hover {

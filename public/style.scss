@@ -208,8 +208,12 @@ header {
         @extend %flex-row;
         justify-content: space-between;
         align-items: center;
-        padding: 5rem 14rem 5rem 14rem;
+        padding: 5rem 14rem 5rem 24rem;
         background-color: rgb(236, 236, 236);
+
+        &.transparent {
+            background-color: transparent;
+        }
         
 
         & > p {
@@ -220,11 +224,12 @@ header {
 
         .buttons-div {
             @extend %flex-col;
+            margin-right: 12rem;
             
             & > p {
                 width: fit-content;
-                margin: 0 0 1.5rem 0.5rem;
-                font-size: 1.2rem;
+                margin: 0 0 0.5rem 0.5rem;
+                font-size: 1rem;
             }
 
             .ul-1 {
@@ -238,11 +243,12 @@ header {
                     font-size: 1.2rem;
                     cursor: pointer;
                     list-style: none;
-                    background-color: rgb(201, 201, 201);
+                    background-color: rgb(219, 219, 219);
                     padding: 1rem;
                     text-align: center;
                     margin: 0.5rem;
                     font-weight: 500;
+                    transition: background-color 0.1s ease;
 
                     &:hover {
                         text-decoration: underline;
