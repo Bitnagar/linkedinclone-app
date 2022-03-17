@@ -44,6 +44,93 @@ export default {
             {
                 "innerText": "Career and Employement",
             }
+        ],
+
+        "buttonData2": [
+            {
+                "innerText": "Engineering"
+            },
+            {
+                "innerText": "Business Development"
+            },
+            {
+                "innerText": "Finance"
+            },
+            {
+                "innerText": "Administrative Assistant"
+            },
+            {
+                "innerText": "Retail Associate"
+            },
+            {
+                "innerText": "Customer Service"
+            },
+            {
+                "innerText": "Operations"
+            },
+            {
+                "innerText": "Information Technology"
+            },
+            {
+                "innerText": "Marketing"
+            },
+            {
+                "innerText": "Human Resource"
+            },
+            {
+                "innerText": "Healthcare Service"
+            },
+            {
+                "innerText": "Sales"
+            },
+            {
+                "innerText": "Program and Project Management"
+            },
+            {
+                "innerText": "Accounting"
+            },
+            {
+                "innerText": "Art Design"
+            },
+            {
+                "innerText": "Community and Social Service"
+            },
+            {
+                "innerText": "Consulting"
+            },
+            {
+                "innerText": "Education"
+            },
+            {
+                "innerText": "Entrepreneurship"
+            },
+            {
+                "innerText": "Legal"
+            },
+            {
+                "innerText": "Media and communications"
+            },
+            {
+                "innerText": "Military and Protective Services"
+            },
+            {
+                "innerText": "Product Management"
+            },
+            {
+                "innerText": "Purchasing"
+            },
+            {
+                "innerText": "Quality Assurance"
+            },
+            {
+                "innerText": "Real Estate"
+            },
+            {
+                "innerText": "Support"
+            },
+            {
+                "innerText": "Administrative"
+            },
         ]
     }
 }
