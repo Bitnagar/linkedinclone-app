@@ -10,7 +10,7 @@
           flex-direction: column;
 }
 
-.main-content-container .content-1-container, .main-content-container .content-1-container .content-1-main > form .hr-div, .main-content-container .content-2-container {
+.main-content-container .content-1-container, .main-content-container .content-1-container .content-1-main > form .hr-div, .main-content-container .content-2-container, .main-content-container .content-3-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -267,6 +267,49 @@ header nav .header-btn-container .sign-in-btn:hover {
 }
 
 .main-content-container .content-2-container .buttons-div .ul-1 .li-set-1:hover {
+  text-decoration: underline;
+  background-color: #b3b3b3;
+}
+
+.main-content-container .content-3-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 14rem 5rem 24rem;
+  background-color: #f7f1e9;
+}
+
+.main-content-container .content-3-container > p {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #b15c24;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.main-content-container .content-3-container > :last-child {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 3.5rem;
+  border: 1px solid black;
+  border-radius: 8rem;
+  font-size: 1.2rem;
+  color: black;
+  cursor: pointer;
+  padding: 1rem;
+  text-align: center;
+  margin: 0.5rem;
+  font-weight: 400;
+  margin-right: 44rem;
+  -webkit-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
+}
+
+.main-content-container .content-3-container > :last-child:hover {
   text-decoration: underline;
   background-color: #b3b3b3;
 }

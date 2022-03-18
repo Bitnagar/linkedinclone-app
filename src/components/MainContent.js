@@ -109,14 +109,18 @@ export default function MainContent() {
                     <p>SUGGESTED SEARCHES</p>
                     <ul className="ul-1">
                         <Li2 n={n2} /> <br></br>
-                    <p
-                        className="li-set-1"
-                        onClick={changeShowMore2AndN2}
-                    >{showMore2 ? "Show less" : "Show more"}
-                     {showMore2 ? <> &uarr;</> : <> &darr;</>}
-                    </p>
+                        <p
+                            className="li-set-1"
+                            onClick={changeShowMore2AndN2}
+                        >{showMore2 ? "Show less" : "Show more"}
+                        {showMore2 ? <> &uarr;</> : <> &darr;</>}
+                        </p>
                     </ul>
                 </div>
+            </div>
+            <div className="content-3-container">
+                <p>Post your job for <br></br> millions of people to<br></br> see</p>
+                <p>Post a job</p>
             </div>
         </div>
     )

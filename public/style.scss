@@ -258,4 +258,40 @@ header {
             }
         }
     }
+
+    .content-3-container {
+        @extend %flex-row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 14rem 5rem 24rem;
+        background-color: rgb(247, 241, 233);
+
+        & > p {
+            font-size: 2.5rem;
+            font-weight: 400;
+            color: rgb(177, 92, 36);
+            align-self: flex-start;
+        }
+
+        & > :last-child {
+            width: fit-content;
+            height: 3.5rem;
+            border: 1px solid black;
+            border-radius: 8rem;
+            font-size: 1.2rem;
+            color: black;
+            cursor: pointer;
+            padding: 1rem;
+            text-align: center;
+            margin: 0.5rem;
+            font-weight: 400;
+            margin-right: 44rem;
+            transition: background-color 0.1s ease;
+
+            &:hover {
+                text-decoration: underline;
+                background-color: rgb(179, 179, 179);
+            }
+        }
+    }
 }
