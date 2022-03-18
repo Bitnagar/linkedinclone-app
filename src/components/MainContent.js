@@ -1,5 +1,6 @@
 import React from "react";
 import ManSitting from "../assets/man-sitting.svg";
+import circleProfilePic from "../assets/circle-profile.png";
 import Li from "./Li"
 import Li2 from "./Li2"
 
@@ -121,6 +122,21 @@ export default function MainContent() {
             <div className="content-3-container">
                 <p>Post your job for <br></br> millions of people to<br></br> see</p>
                 <p>Post a job</p>
+            </div>
+            <div className="content-4-container">
+                <header>
+                    <button>Previous</button>
+                    <button>Next</button>
+                </header>
+                <div className="profile-container">
+                    <div className="profile-1">
+                        <div className="profile-heading">
+                            <h1>Let the right people know <br></br> you're open to work</h1>
+                            <p>With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.</p>
+                        </div>
+                        <img src={circleProfilePic} alt="man smiling" width={450}></img>
+                    </div>
+                </div>
             </div>
         </div>
     )

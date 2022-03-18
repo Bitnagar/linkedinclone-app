@@ -294,4 +294,51 @@ header {
             }
         }
     }
+
+    .content-4-container {
+        @extend %flex-col;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12rem 26rem 8rem 24rem;
+        background-color: rgb(240, 240, 240);
+
+        & > header {
+            align-self: flex-end;
+            margin-bottom: 2rem;
+
+            & > :first-child {
+                margin-right: 1rem;
+            }
+        }
+
+        .profile-container {
+
+            .profile-1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 4rem;
+
+                & > img {
+                    margin-right: 3rem;
+                }
+
+                .profile-heading {
+                    & > h1 {
+                        font-size: 2.4rem;
+                        font-weight: 400;
+                        margin-bottom: 1rem;
+                        color: #0054b5;
+                        justify-items: center;
+                    }
+
+                    & > p {
+                        font-size: 2rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
 }

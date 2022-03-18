@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 /* bc === brand color */
-.main-content-container .content-2-container .buttons-div {
+.main-content-container .content-2-container .buttons-div, .main-content-container .content-4-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,4 +312,59 @@ header nav .header-btn-container .sign-in-btn:hover {
 .main-content-container .content-3-container > :last-child:hover {
   text-decoration: underline;
   background-color: #b3b3b3;
+}
+
+.main-content-container .content-4-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12rem 26rem 8rem 24rem;
+  background-color: #f0f0f0;
+}
+
+.main-content-container .content-4-container > header {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.main-content-container .content-4-container > header > :first-child {
+  margin-right: 1rem;
+}
+
+.main-content-container .content-4-container .profile-container .profile-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+
+.main-content-container .content-4-container .profile-container .profile-1 > img {
+  margin-right: 3rem;
+}
+
+.main-content-container .content-4-container .profile-container .profile-1 .profile-heading > h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #0054b5;
+  justify-items: center;
+}
+
+.main-content-container .content-4-container .profile-container .profile-1 .profile-heading > p {
+  font-size: 2rem;
+  font-weight: 300;
 }
