@@ -131,6 +131,77 @@ export default {
             {
                 "innerText": "Administrative"
             },
+        ],
+
+        "dropDownData": [
+            {
+               "courseName": "Training and Education",
+               "courseCount": 150
+            },
+            {
+               "courseName": "IT Help Desk",
+               "courseCount": 290
+            },
+            {
+               "courseName": "Business Analysis and Strategy",
+               "courseCount": 700
+            },
+            {
+               "courseName": "Career Development",
+               "courseCount": 430
+            },
+            {
+               "courseName": "Finance and Accounting",
+               "courseCount": 240
+            },
+            {
+               "courseName": "Leadership and Management",
+               "courseCount": 1200
+            },
+            {
+               "courseName": "Mobile Development",
+               "courseCount": 440
+            },
+            {
+               "courseName": "Marketing",
+               "courseCount": 750
+            },
+            {
+               "courseName": "Cloud Computing",
+               "courseCount": 780
+            },
+            {
+               "courseName": "Project Management",
+               "courseCount": 350
+            },
+            {
+               "courseName": "Visualization and Realtime",
+               "courseCount": 1200
+            },
+            {
+               "courseName": "Animation and Illustration",
+               "courseCount": 1600
+            },
+            {
+               "courseName": "Audio and Music",
+               "courseCount": 400
+            },
+            {
+               "courseName": "AEC",
+               "courseCount": 1300
+            },
+            {
+               "courseName": "Graphic Design",
+               "courseCount": 920
+            },
+            {
+               "courseName": "Motion Graphics and VFX",
+               "courseCount": 870
+            },
+            {
+               "courseName": "Photography",
+               "courseCount": 1100
+            },
         ]
     }
 }

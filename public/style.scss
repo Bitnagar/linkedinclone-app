@@ -45,17 +45,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    // overflow-x: hidden;
 }
-
-// #root {
-//     width: 100%;
-//     height: 100%;
-// }
-
-// .app-container {
-//     height: 100%;
-// }
 
 .button {
     width: 6rem;
@@ -110,9 +100,6 @@ header {
 
 /*--------MAIN CONTENT STYLES--------*/
 .main-content-container {
-    // width: 100%;
-    // height: 100%;
-
     .content-1-container {
         @extend %flex-row;
         justify-content: center;
@@ -317,10 +304,6 @@ header {
         }
 
         #slider {
-            // display: flex;
-            // flex-direction: row;
-            // max-width: fit-content;
-            // // max-height: 28rem;
             overflow: hidden;
             max-width: 100%;
             max-height: 100%;
@@ -362,9 +345,201 @@ header {
             }
         }
     }
-}
 
-// .translate {
-//     transition: transform .5s ease-in;
-//     transform: translateX(-81rem);
-// }
+    .content-5-container {
+        padding: 12rem 20rem 8rem 24rem;
+        .main-5 {
+            @extend %flex-row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10rem;
+
+            .left {
+                & > p {
+                    font-size: 3.2rem;
+                    font-weight: 300;
+                    margin-top: 2rem;
+                }
+
+                & > li {
+                    width: fit-content;
+                    height: 3.2rem;
+                    margin-top: 2rem;
+                    border: 1px solid black;
+                    border-radius: 8rem;
+                    font-size: 1.2rem;
+                    padding: 0.8rem;
+                    font-weight: 400;
+                    color: rgb(96, 96, 96);
+                    list-style: none;
+                    cursor: pointer;
+                    transition: background-color 0.1s ease;
+
+                    &:hover {
+                        text-decoration: underline;
+                        background-color: rgb(179, 179, 179);
+                    }
+                }
+            }
+
+            .right {
+                & > p {
+                    font-size: 3.2rem;
+                    font-weight: 300;
+                    margin-top: 2rem;
+                }
+
+                .dropdown-container {
+
+                    @extend %flex-col;
+                    width: 23rem;
+
+                    #drop-down-btn {
+                        border: 1px solid rgb(192, 192, 192);
+                        border-radius: 0.4rem;
+                        padding: 1rem 2rem 1rem 0.1rem;
+                        margin-top: 2rem;
+                        font-size: 1.2rem;
+                        text-align: center;
+                        cursor: pointer;
+                        color: rgb(102, 102, 102);
+                    }
+    
+                    #dropdown {
+
+                        border: 1px solid rgb(209, 209, 209);
+                        cursor: pointer;
+                        background-color: white;
+                        padding: 1rem;
+                        border-radius: 0.4rem;
+                        max-height: 25rem;
+                        overflow: scroll;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.107);
+
+                        #dropdown-anchors {
+
+                            font-weight: 400;
+                            color: rgb(112, 112, 112);
+
+                            & > b {
+                                font-weight: 600;
+                                color: black;
+                            }
+                        
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content-6-container {
+        @extend %flex-row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10rem 0 10rem 24rem;
+        background-color: #00a0dc;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 38%, rgba(205, 227, 255, 0.288) 38%, rgba(205, 227, 255, 0.244) 100%);
+
+        .main-6 {
+            @extend %flex-row;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem; 
+
+            & > p {
+                font-size: 2.5rem;
+                font-weight: 400;
+                color: rgb(177, 92, 36);
+            }
+        }
+    }
+
+    .content-7-container {
+        @extend %flex-col;
+        padding-left: 24rem;
+
+        & > p {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-top: 5rem;
+        }
+
+        & > button {
+            width: 9rem;
+            height: 3.5rem;
+            border-radius: 2rem;
+            font-size: 1.4rem;
+            outline: none;
+            border: none;
+            background-color: $bc-blue;
+            color: white;
+            margin-top: 1.8rem;
+        }
+    }
+
+    #footer {
+        margin-top: 2rem;
+        
+        @extend %flex-col;
+        background-color: rgb(241, 241, 241);
+
+        & > main {
+            @extend %flex-row;
+            margin-top: 2rem;
+            padding-left: 24rem;
+
+            & > img {
+                height: 1.7rem;
+                margin-right: 10rem;
+            }
+            
+            & > div {
+                margin-right: 8rem;
+
+                & > h6 {
+                    margin-bottom: 0.6rem;
+                    font-weight: 600;
+                }
+
+                & > p {
+                    margin-bottom: 0.4rem;
+                    font-size: 0.9rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                        color: $bc-light-blue;
+                    }
+                }
+            }
+
+        }
+
+        #sub-footer {
+            background-color: white;
+            padding: 1rem 0rem 1rem 24rem;
+            
+            #sub-footer-main {
+                @extend %flex-row;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            #sub-footer-main p {
+                font-size: 0.8rem;
+            }
+            #sub-footer-main p:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            #sub-footer-logo {
+                height: .95rem;
+            }
+        }
+    }
+}
